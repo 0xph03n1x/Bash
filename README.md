@@ -1,3 +1,3 @@
 # Bash
 
-Shellscripts to make life easier from my personal collection.
+Shellscripts to make life easier of my personal collection.
