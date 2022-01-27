@@ -4,7 +4,7 @@ $reader = New-Object IO.StreamReader $InputFile
     while($reader.ReadLine() -ne $null){ $TotalIPs++ }
 write-host  ""
 write-host "Performing nslookup on each address..."
-        foreach ($address in addresses) {
+        foreach ($address in $addresses) {
             ## Progress bar
             $i++
             $percentagedone = (($i / $TotalIPs) * 100)
