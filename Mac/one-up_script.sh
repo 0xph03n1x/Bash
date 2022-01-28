@@ -1,5 +1,6 @@
 #!/bin/bash
 #Move files from multiple directories to one
+#VERY WORK-IN-PROGRESS, will likely do in python instead
 
 read -p "Enter file name: " name_file
 read -p "Please Enter path where you want to save your result: " path
