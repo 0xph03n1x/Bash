@@ -9,7 +9,7 @@ write-host "Performing nslookup on each address..."
             $i++
             $percentagedone = (($i / $TotalIPs) * 100)
             $percentagerounded = "{0:N0}" -f $percentagedone
-            Write-Progress -Activity "Performing nslookups" -CurrentOperation "Working on IP:  $address (IP $i of $TotalIPs)" -Status "$percentagerounded% complete" -PercentageComplete $percentagedone
+            Write-Progress -Activity "Performing nslookups" -CurrentOperation "Working on IP:  $address (IP $i of $TotalIPs)" -Status "$percentagerounded% complete" -PercentComplete $percentagedone
             ## End Progress bar
             try {
                 [system.net.dns]::resolve($address) | Select AddressList,Hostname | Format-Table -AutoSize | Out-File lookup.csv
