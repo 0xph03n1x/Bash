@@ -2,6 +2,5 @@
 rm -v ~/Downloads/*.torrent
 
 echo
-echo
-echo -e "Removed all *.torrent files from Downloads directory!"
+echo -e "Removed all *.torrent files from the Downloads directory!"
 echo
