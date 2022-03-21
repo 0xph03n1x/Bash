@@ -1,6 +1,8 @@
 #!/bin/bash
 rm -v ~/Downloads/*.torrent
 
-echo
-echo -e "Removed all *.torrent files from the Downloads directory!"
-echo
+for f in ~/Downloads/*.torrent
+do
+	# if filem, delete it
+	[ -f "$f" ] && rm "$f" && echo "removed $f"
+done
