@@ -3,6 +3,6 @@ rm -v ~/Downloads/*.torrent
 
 for f in ~/Downloads/*.torrent
 do
-	# if filem, delete it
+	# if found, delete it
 	[ -f "$f" ] && rm "$f" && echo "removed $f"
 done
