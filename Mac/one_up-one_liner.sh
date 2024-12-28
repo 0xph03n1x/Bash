@@ -1,6 +1,6 @@
 #!/bin/bash
 
-find . -name "*.mkv" -exec mv {} --target .;
+find . -name "*.mkv" -exec mv {} --target . \;
 
 # Simple example of loop to move files from subdirectories to the current directory
 for i in {01..10}; do mv folder$i/file$i .; done
